@@ -1,0 +1,265 @@
+/* =====================================================
+   HERO SECTION
+   Mobile First
+   ===================================================== */
+
+.hero {
+    width: 100%;
+    padding: var(--spacing-vertical) var(--spacing-horizontal);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-container {
+    width: 100%;
+    max-width: var(--max-width-container);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+
+    gap: 4.8rem;
+}
+
+.hero-content {
+    width: 100%;
+    max-width: 90rem;
+}
+
+
+/* =====================================================
+   TÍTULO
+   ===================================================== */
+
+.hero-title {
+    margin-bottom: 1.6rem;
+
+    font-size: clamp(3.2rem, 8vw, 5.6rem);
+    font-weight: 800;
+    line-height: 1.2;
+
+    color: var(--white);
+}
+
+
+/* Sublinhado inferior */
+
+.hero-title .highlight-line-bottom {
+    position: relative;
+    display: inline-block;
+}
+
+.hero-title .highlight-line-bottom::after {
+    content: "";
+
+    position: absolute;
+    left: 0;
+    bottom: -0.2rem;
+
+    width: 100%;
+    height: 0.4rem;
+
+    background-color: var(--purple-400);
+    border-radius: 0.4rem;
+}
+
+
+/* Linha superior */
+
+.hero-title .highlight-line-top {
+    position: relative;
+    display: inline-block;
+}
+
+.hero-title .highlight-line-top::after {
+    content: "";
+
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    width: 100%;
+    height: 0.4rem;
+
+    background-color: var(--purple-400);
+    border-radius: 0.4rem;
+}
+
+
+/* Texto roxo */
+
+.hero-title .highlight-purple {
+    color: var(--purple-400);
+}
+
+
+/* =====================================================
+   DESCRIÇÃO
+   ===================================================== */
+
+.hero-description {
+    width: 100%;
+    max-width: 54rem;
+
+    margin: 0 auto 3.2rem;
+
+    font-size: 1.5rem;
+    line-height: 1.6;
+
+    color: var(--blue-gray-300);
+}
+
+
+/* =====================================================
+   BOTÕES
+   ===================================================== */
+
+.hero-buttons {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 1.6rem;
+
+    flex-wrap: wrap;
+}
+
+.btn {
+    display: inline-block;
+
+    padding: 1.2rem 2.4rem;
+
+    font-size: 1.6rem;
+    font-weight: 600;
+
+    text-decoration: none;
+    text-align: center;
+
+    border-radius: 0.8rem;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.2s ease-in-out,
+        border-color 0.2s ease-in-out,
+        transform 0.2s ease-in-out;
+}
+
+
+/* Botão principal */
+
+.btn-primary {
+    background-color: var(--purple-600);
+    color: var(--white);
+
+    border: 0.2rem solid var(--purple-600);
+}
+
+.btn-primary:hover {
+    background-color: var(--purple-800);
+    border-color: var(--purple-800);
+
+    transform: translateY(-0.1rem);
+}
+
+
+/* Botão outline */
+
+.btn-outline {
+    background-color: transparent;
+    color: var(--white);
+
+    border: 0.2rem solid var(--blue-gray-600);
+}
+
+.btn-outline:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+    border-color: var(--white);
+
+    transform: translateY(-0.1rem);
+}
+
+
+/* Foco para teclado */
+
+.btn:focus-visible {
+    outline: 0.2rem solid var(--purple-400);
+    outline-offset: 0.3rem;
+}
+
+
+/* =====================================================
+   IMAGEM / MOCKUP
+   ===================================================== */
+
+.hero-image {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-image img {
+    display: block;
+
+    width: 100%;
+    max-width: 110rem;
+    height: auto;
+
+    margin: 0 auto;
+
+    object-fit: contain;
+}
+
+
+/* =====================================================
+   TELAS MUITO PEQUENAS
+   ===================================================== */
+
+@media (max-width: 420px) {
+
+    .hero {
+        padding-top: 3.2rem;
+        padding-bottom: 3.2rem;
+    }
+
+    .hero-container {
+        gap: 3.2rem;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+    }
+
+    .btn {
+        width: 100%;
+        max-width: 24rem;
+    }
+
+}
+
+
+/* =====================================================
+   DESKTOP
+   ===================================================== */
+
+@media (min-width: 768px) {
+
+    .hero {
+        padding: 6rem 2rem 4rem;
+    }
+
+    .hero-container {
+        gap: 5.6rem;
+    }
+
+    .hero-description {
+        font-size: 1.8rem;
+    }
+
+}
