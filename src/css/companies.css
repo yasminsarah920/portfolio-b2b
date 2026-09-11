@@ -1,0 +1,150 @@
+/* =====================================================
+   COMPANIES SECTION
+   ===================================================== */
+
+.companies {
+    width: 100%;
+    padding: var(--spacing-vertical) var(--spacing-horizontal);
+
+    display: flex;
+    justify-content: center;
+}
+
+.companies-container {
+    width: 100%;
+    max-width: 110rem;
+
+    text-align: center;
+}
+
+
+/* =====================================================
+   TÍTULO
+   ===================================================== */
+
+.companies-title {
+    margin-bottom: 3.2rem;
+
+    font-size: clamp(3rem, 6vw, 4rem);
+    font-weight: 800;
+    line-height: 1.2;
+
+    color: var(--white);
+}
+
+
+/* =====================================================
+   GRID DE EMPRESAS
+   ===================================================== */
+
+.companies-grid {
+    width: 100%;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 2.4rem 3.2rem;
+}
+
+
+/* =====================================================
+   ITEM DA EMPRESA
+   ===================================================== */
+
+.company-item {
+    display: flex;
+    align-items: center;
+
+    gap: 0.8rem;
+
+    color: var(--white);
+
+    font-size: 1.8rem;
+    font-weight: 700;
+
+    opacity: 0.9;
+
+    transition:
+        opacity 0.2s ease-in-out,
+        transform 0.2s ease-in-out;
+}
+
+.company-item:hover {
+    opacity: 1;
+    transform: translateY(-0.2rem);
+}
+
+
+/* =====================================================
+   LOGO
+   ===================================================== */
+
+.company-item img {
+    display: block;
+
+    width: auto;
+    height: 2.4rem;
+
+    object-fit: contain;
+}
+
+
+/* =====================================================
+   ACESSIBILIDADE
+   ===================================================== */
+
+.company-item:focus-visible {
+    outline: 0.2rem solid var(--purple-400);
+    outline-offset: 0.4rem;
+    border-radius: 0.4rem;
+}
+
+
+/* =====================================================
+   TELAS PEQUENAS
+   ===================================================== */
+
+@media (max-width: 480px) {
+
+    .companies {
+        padding-top: 3.2rem;
+        padding-bottom: 3.2rem;
+    }
+
+    .companies-title {
+        margin-bottom: 2.4rem;
+    }
+
+    .companies-grid {
+        gap: 2rem;
+    }
+
+    .company-item {
+        font-size: 1.6rem;
+    }
+
+    .company-item img {
+        height: 2rem;
+    }
+
+}
+
+
+/* =====================================================
+   DESKTOP
+   ===================================================== */
+
+@media (min-width: 768px) {
+
+    .companies-title {
+        font-size: 3.6rem;
+    }
+
+    .companies-grid {
+        gap: 4rem;
+    }
+
+}

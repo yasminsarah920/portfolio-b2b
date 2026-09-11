@@ -1,0 +1,358 @@
+
+.testimonials {
+    width: 100%;
+
+    padding: var(--spacing-vertical) var(--spacing-horizontal);
+
+    background-color: var(--purple-900, #581C87);
+
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.testimonials-container {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* ===================================================
+   HEADER
+=================================================== */
+
+.testimonials-header {
+    width: 100%;
+    max-width: 60rem;
+
+    padding: 0 2rem;
+    margin-bottom: 4rem;
+
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.testimonials-title {
+    margin-bottom: 1.2rem;
+
+    font-size: clamp(3.2rem, 5vw, 4.8rem);
+    font-weight: 800;
+    line-height: 1.2;
+
+    color: var(--white, #ffffff);
+}
+
+.testimonials-title .purple-highlight {
+    display: block;
+
+    color: var(--purple-400, #c084fc);
+}
+
+.testimonials-subtitle {
+    font-size: 1.5rem;
+    line-height: 1.5;
+
+    color: var(--white, #ffffff);
+}
+
+/* ===================================================
+   CAROUSEL
+=================================================== */
+
+.testimonials-carousel-wrapper {
+    width: 100%;
+    padding: 1rem 0;
+
+    overflow: visible;
+}
+
+.testimonials-cards {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+
+    gap: 2.4rem;
+
+    padding: 3rem 0;
+
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.testimonials-cards::-webkit-scrollbar {
+    display: none;
+}
+
+/* Espaço lateral para centralizar
+   o primeiro e o último card */
+.testimonials-cards::before,
+.testimonials-cards::after {
+    content: "";
+
+    flex: 0 0 calc(50vw - 16rem);
+}
+
+/* ===================================================
+   TESTIMONIAL CARD
+=================================================== */
+
+.testimonial-card {
+    flex: 0 0 30rem;
+    min-width: 30rem;
+    min-height: 32rem;
+
+    padding: 3.2rem 2.4rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    background-color: var(--blue-gray-100, #f1f5f9);
+
+    border-radius: 2rem;
+
+    scroll-snap-align: center;
+
+    opacity: 0.55;
+    transform: scale(0.9);
+
+    transition:
+        transform 0.35s ease,
+        opacity 0.35s ease,
+        box-shadow 0.35s ease;
+
+    box-sizing: border-box;
+}
+
+/* Card ativo / central */
+.testimonial-card.active {
+    opacity: 1;
+
+    transform: scale(1.08);
+
+    box-shadow:
+        0 20px 35px -8px rgba(0, 0, 0, 0.45);
+
+    z-index: 2;
+}
+
+/* ===================================================
+   COMPANY
+=================================================== */
+
+.card-company {
+    display: flex;
+    align-items: center;
+
+    gap: 1rem;
+
+    margin-bottom: 1.6rem;
+
+    font-size: 1.8rem;
+    font-weight: 700;
+
+    color: var(--purple-400, #c084fc);
+}
+
+.company-logo {
+    width: auto;
+    height: 2.8rem;
+
+    object-fit: contain;
+}
+
+/* ===================================================
+   TESTIMONIAL TEXT
+=================================================== */
+
+.card-text {
+    margin-bottom: 2.4rem;
+
+    font-size: 1.5rem;
+    line-height: 1.6;
+
+    color: var(--blue-gray-700, #334155);
+}
+
+/* ===================================================
+   AUTHOR
+=================================================== */
+
+.card-author {
+    display: flex;
+    align-items: center;
+
+    gap: 1.2rem;
+}
+
+.author-avatar {
+    width: 4.8rem;
+    height: 4.8rem;
+
+    flex-shrink: 0;
+
+    border-radius: 50%;
+
+    object-fit: cover;
+}
+
+.author-name {
+    margin-bottom: 0.2rem;
+
+    font-size: 1.5rem;
+    font-weight: 700;
+
+    color: var(--blue-gray-900, #0f172a);
+}
+
+.author-role {
+    font-size: 1.3rem;
+
+    color: var(--purple-400, #c084fc);
+}
+
+/* ===================================================
+   CAROUSEL CONTROLS
+=================================================== */
+
+.testimonials-controls {
+    display: flex;
+    align-items: center;
+
+    gap: 2.4rem;
+
+    margin-top: 1rem;
+}
+
+.carousel-btn {
+    display: flex;
+    align-items: center;
+
+    gap: 0.8rem;
+
+    padding: 0;
+
+    background: transparent;
+    border: none;
+
+    color: var(--white, #ffffff);
+
+    font-size: 1.5rem;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition:
+        opacity 0.2s ease,
+        transform 0.2s ease;
+}
+
+.carousel-btn:hover {
+    opacity: 0.8;
+    transform: scale(1.05);
+}
+
+.carousel-btn:focus-visible {
+    outline: 0.2rem solid var(--white, #ffffff);
+    outline-offset: 0.4rem;
+}
+
+/* ===================================================
+   DESKTOP — 768px+
+=================================================== */
+
+@media (min-width: 768px) {
+
+    .testimonials {
+        padding: 6rem 2rem;
+    }
+
+    .testimonials-header {
+        margin-bottom: 4.8rem;
+    }
+
+    .testimonials-subtitle {
+        font-size: 1.6rem;
+    }
+
+    .testimonial-card {
+        flex-basis: 35rem;
+        min-width: 35rem;
+    }
+
+    .testimonials-cards::before,
+    .testimonials-cards::after {
+        flex-basis: calc(50vw - 20rem);
+    }
+}
+
+/* ===================================================
+   SMALL MOBILE — 480px
+=================================================== */
+
+@media (max-width: 480px) {
+
+    .testimonials {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .testimonials-header {
+        padding: 0;
+        margin-bottom: 3rem;
+    }
+
+    .testimonials-title {
+        font-size: 3rem;
+    }
+
+    .testimonials-subtitle {
+        font-size: 1.4rem;
+    }
+
+    .testimonials-cards {
+        gap: 1.6rem;
+        padding: 2.5rem 0;
+    }
+
+    .testimonial-card {
+        flex-basis: 27rem;
+        min-width: 27rem;
+        min-height: 31rem;
+
+        padding: 2.8rem 2rem;
+    }
+
+    .testimonial-card.active {
+        transform: scale(1.04);
+    }
+
+    .card-company {
+        font-size: 1.6rem;
+    }
+
+    .card-text {
+        font-size: 1.4rem;
+    }
+
+    .author-name {
+        font-size: 1.4rem;
+    }
+
+    .author-role {
+        font-size: 1.2rem;
+    }
+
+    .testimonials-cards::before,
+    .testimonials-cards::after {
+        flex-basis: calc(50vw - 13.5rem);
+    }
+}
