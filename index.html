@@ -1,716 +1,1080 @@
 <!DOCTYPE html>
+
 <html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
 
-    <!-- Responsividade -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+```
+<!-- Responsividade -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Portfolio B2B</title>
+<!-- SEO -->
+<meta name="description"
+    content="Portfolio B2B com soluções digitais, design de interfaces e ferramentas para acelerar projetos.">
+<meta name="author" content="Weeb">
 
-    <!-- CSS principal -->
-    <link rel="stylesheet" href="./src/css/styles.css">
+<title>Portfolio B2B | Weeb</title>
 
-    <!-- Font Awesome -->
-    <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-    >
+<!-- CSS principal -->
+<link rel="stylesheet" href="./src/css/styles.css">
 
-    <!-- JavaScript -->
-    <script type="module" src="./script.js"></script>
+<!-- Font Awesome -->
+<link rel="preconnect" href="https://cdnjs.cloudflare.com">
+<link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<!-- JavaScript -->
+<script type="module" src="./script.js"></script>
+```
+
 </head>
 
 <body>
 
-    <!-- ==================== CABEÇALHO ==================== -->
-    <header>
-        <nav class="navbar" aria-label="Navegação principal">
+```
+<!-- =====================================================
+     HEADER
+====================================================== -->
 
-            <!-- Logo -->
-            <a href="#home" class="logo" aria-label="Weeb - Página inicial">
-                weeb
-            </a>
+<header class="header">
 
-            <!-- Botão do menu mobile -->
-            <button
-                class="menu-toggle"
-                id="menu-toggle"
-                type="button"
-                aria-label="Abrir menu"
-                aria-controls="nav-menu"
-                aria-expanded="false"
-            >
-                <img src="./src/icons/menu.svg" alt="">
-            </button>
+    <nav class="navbar" aria-label="Navegação principal">
 
-            <!-- Menu -->
-            <div class="nav-menu" id="nav-menu">
+        <!-- Logo -->
+        <a href="#home" class="logo" aria-label="Weeb - página inicial">
+            weeb
+        </a>
 
-                <ul class="nav-links">
-                    <li>
-                        <a href="#home">About us</a>
-                    </li>
+        <!-- Botão do menu mobile -->
+        <button
+            class="menu-toggle"
+            id="menu-toggle"
+            type="button"
+            aria-label="Abrir menu"
+            aria-expanded="false"
+            aria-controls="nav-menu">
 
-                    <li>
-                        <a href="#about">Solutions</a>
-                    </li>
+            <img
+                src="./src/icons/menu.svg"
+                alt=""
+                aria-hidden="true">
 
-                    <li>
-                        <a href="#services">Pricing</a>
-                    </li>
+        </button>
 
-                    <li>
-                        <a href="#contact">Resources</a>
-                    </li>
-                </ul>
+        <!-- Menu -->
+        <div class="nav-menu" id="nav-menu">
 
-                <!-- Ações -->
-                <div class="nav-actions">
-                    <a href="#login" class="btn-login">
-                        Log In
-                    </a>
+            <ul class="nav-links">
 
-                    <a href="#join" class="btn-join">
-                        Join Now
-                    </a>
-                </div>
+                <li>
+                    <a href="#home">About us</a>
+                </li>
 
-            </div>
-        </nav>
-    </header>
+                <li>
+                    <a href="#discover">Solutions</a>
+                </li>
 
+                <li>
+                    <a href="#pricing">Pricing</a>
+                </li>
 
-    <!-- ==================== CONTEÚDO PRINCIPAL ==================== -->
-    <main id="home">
+                <li>
+                    <a href="#resources">Resources</a>
+                </li>
 
-        <!-- ==================== HERO ==================== -->
-        <section class="hero" aria-labelledby="hero-title">
+            </ul>
 
-            <div class="hero-container">
+            <!-- Ações -->
+            <div class="nav-actions">
 
-                <!-- Texto -->
-                <div class="hero-content">
+                <a href="#login" class="btn-login">
+                    Log In
+                </a>
 
-                    <h1 class="hero-title" id="hero-title">
-                        Design
-                        <span class="highlight-line-bottom">Faster</span>
-                        <span class="highlight-purple">&amp;</span>
-                        <span class="highlight-line-top">Better</span>
-                    </h1>
-
-                    <p class="hero-description">
-                        Acelere a criação de interfaces incríveis com nossa
-                        plataforma completa de design. Simplifique fluxos de
-                        trabalho, colabore em tempo real e entregue projetos
-                        de alto impacto para seus clientes B2B em metade do tempo.
-                    </p>
-
-                    <!-- Botões -->
-                    <div class="hero-buttons">
-
-                        <a href="#join" class="btn btn-primary">
-                            Join Now
-                        </a>
-
-                        <a href="#demo" class="btn btn-outline">
-                            View Demo
-                        </a>
-
-                    </div>
-                </div>
-
-                <!-- Mockup -->
-                <div class="hero-image">
-                    <img
-                        src="./src/img/hero-mockup.svg"
-                        alt="Demonstração da plataforma de design"
-                    >
-                </div>
+                <a href="#join" class="btn-join">
+                    Join Now
+                </a>
 
             </div>
-        </section>
 
+        </div>
 
-        <!-- ==================== EMPRESAS ==================== -->
-        <section class="companies" id="about" aria-labelledby="companies-title">
+    </nav>
 
-            <div class="companies-container">
+</header>
 
-                <h2 class="companies-title" id="companies-title">
-                    Join Leading Companies
-                </h2>
 
-                <div class="companies-grid">
+<main>
 
-                    <div class="company-item">
-                        <img
-                            src="./src/img/logo-smartfinder.svg"
-                            alt="Logo SmartFinder"
-                        >
-                        <span>SmartFinder</span>
-                    </div>
+    <!-- =====================================================
+         HERO
+    ====================================================== -->
 
-                    <div class="company-item">
-                        <img
-                            src="./src/img/logo-zoomerr.svg"
-                            alt="Logo Zoomerr"
-                        >
-                        <span>Zoomerr</span>
-                    </div>
+    <section class="hero" id="home">
 
-                    <div class="company-item">
-                        <img
-                            src="./src/img/logo-shells.svg"
-                            alt="Logo SHELLS"
-                        >
-                        <span>SHELLS</span>
-                    </div>
+        <div class="hero-container">
 
-                    <div class="company-item">
-                        <img
-                            src="./src/img/logo-waves.svg"
-                            alt="Logo WAVES"
-                        >
-                        <span>WAVES</span>
-                    </div>
+            <div class="hero-content">
 
-                    <div class="company-item">
-                        <img
-                            src="./src/img/logo-artvenue.svg"
-                            alt="Logo ArtVenue"
-                        >
-                        <span>ArtVenue</span>
-                    </div>
+                <h1 class="hero-title">
+                    Design
+                    <span class="highlight-line-bottom">Faster</span>
+                    <span class="highlight-purple">&amp;</span>
+                    <span class="highlight-line-top">Better</span>
+                </h1>
 
-                </div>
-            </div>
-        </section>
-
-
-        <!-- ==================== DISCOVER ==================== -->
-        <section class="discover" id="services" aria-labelledby="discover-title">
-
-            <div class="discover-container">
-
-                <!-- Imagem -->
-                <div class="discover-image">
-                    <img
-                        src="./src/img/formas-geometricas.svg"
-                        alt="Ilustração com formas geométricas"
-                    >
-                </div>
-
-                <!-- Texto -->
-                <div class="discover-content">
-
-                    <span class="discover-tag">
-                        DISCOVER
-                    </span>
-
-                    <h2 class="discover-title" id="discover-title">
-                        <span class="purple-text">Unlimited</span>
-                        <span class="boxed-text">ideas</span>
-                        for your next great projects
-                    </h2>
-
-                    <p class="discover-description">
-                        Acelere o desenvolvimento de produtos B2B com nossa
-                        biblioteca de componentes modulares. Estruture ideias
-                        inovadoras e reduza o tempo de entrega com total flexibilidade.
-                    </p>
-
-                    <a href="#discover" class="discover-link">
-                        Discover Ideas
-                        <span class="arrow" aria-hidden="true">&rarr;</span>
-                    </a>
-
-                </div>
-
-            </div>
-        </section>
-
-
-        <!-- ==================== FERRAMENTAS ==================== -->
-        <section class="tools" aria-labelledby="tools-title">
-
-            <div class="tools-container">
-
-                <!-- Imagem -->
-                <div class="tools-image">
-                    <img
-                        src="./src/img/hero-mockup.svg"
-                        alt="Demonstração das ferramentas da aplicação"
-                    >
-                </div>
-
-                <!-- Texto -->
-                <div class="tools-content">
-
-                    <span class="tools-tag">
-                        <span class="boxed-tag">
-                            POWERFUL
-                        </span>
-                    </span>
-
-                    <h2 class="tools-title" id="tools-title">
-                        All the tools you can imagine
-                    </h2>
-
-                    <p class="tools-description">
-                        Acesse um ecossistema completo de recursos para criar
-                        produtos digitais incríveis. Integre componentes
-                        inteligentes e acelere seu processo criativo de ponta a ponta.
-                    </p>
-
-                </div>
-
-            </div>
-        </section>
-
-
-        <!-- ==================== CLIENTES / IA ==================== -->
-        <section class="customers" aria-labelledby="customers-title">
-
-            <div class="customers-container">
-
-                <!-- Imagem -->
-                <div class="customers-image">
-                    <img
-                        src="./src/img/ai-shapes.svg"
-                        alt="Formas geométricas abstratas relacionadas à inteligência artificial"
-                    >
-                </div>
-
-                <!-- Texto -->
-                <div class="customers-content">
-
-                    <span class="customers-tag">
-                        CUSTOMERS
-                    </span>
-
-                    <h2 class="customers-title" id="customers-title">
-                        <span class="purple-text">Target</span>
-
-                        <span class="pink-box">
-                            <span class="highlight">cust</span>omers
-                        </span>
-
-                        with our powerful AI kit
-                    </h2>
-
-                    <p class="customers-description">
-                        Alcance os clientes certos utilizando nossos modelos
-                        de IA de alta precisão. Otimize campanhas, segmente
-                        públicos com inteligência e potencialize suas conversões
-                        de forma automatizada.
-                    </p>
-
-                    <a href="#targeting" class="customers-link">
-                        How Targeting Customers Works
-                        <span class="arrow" aria-hidden="true">
-                            &rarr;
-                        </span>
-                    </a>
-
-                </div>
-
-            </div>
-        </section>
-
-
-        <!-- ==================== VELOCIDADE ==================== -->
-        <section class="speed" aria-labelledby="speed-title">
-
-            <div class="speed-container">
-
-                <!-- Imagem -->
-                <div class="speed-image">
-                    <img
-                        src="./src/img/hero-mockup.svg"
-                        alt="Demonstração de uma interface rápida e fluida"
-                    >
-                </div>
-
-                <!-- Texto -->
-                <div class="speed-content">
-
-                    <span class="speed-tag">
-                        SPEED
-                    </span>
-
-                    <h2 class="speed-title" id="speed-title">
-                        Work fast, w/o interruptions
-                    </h2>
-
-                    <p class="speed-description">
-                        Ganhe produtividade com fluxos de trabalho contínuos
-                        e sem interrupções. Otimizamos a navegação e o desempenho
-                        para que seu time foque no que realmente importa.
-                    </p>
-
-                </div>
-
-            </div>
-        </section>
-
-
-        <!-- ==================== DEPOIMENTOS ==================== -->
-        <section
-            class="testimonials"
-            id="contact"
-            aria-labelledby="testimonials-title"
-        >
-
-            <div class="testimonials-container">
-
-                <!-- Cabeçalho -->
-                <div class="testimonials-header">
-
-                    <h2 class="testimonials-title" id="testimonials-title">
-                        Our partners. Our Friends.
-                        <span class="purple-highlight">
-                            They love us.
-                        </span>
-                    </h2>
-
-                    <p class="testimonials-subtitle">
-                        Veja o que nossos parceiros e clientes dizem sobre
-                        como transformamos suas rotinas e aceleramos seus resultados.
-                    </p>
-
-                </div>
-
-                <!-- Cards -->
-                <div class="testimonials-carousel-wrapper">
-
-                    <div
-                        class="testimonials-cards"
-                        id="testimonials-cards"
-                        aria-live="polite"
-                    >
-                        <!-- Os depoimentos são inseridos pelo JavaScript -->
-                    </div>
-
-                </div>
-
-                <!-- Controles -->
-                <div class="testimonials-controls">
-
-                    <button
-                        class="carousel-btn"
-                        id="prev-btn"
-                        type="button"
-                        aria-label="Ver depoimento anterior"
-                    >
-                        <span class="arrow" aria-hidden="true">
-                            &larr;
-                        </span>
-                        Prev
-                    </button>
-
-                    <button
-                        class="carousel-btn"
-                        id="next-btn"
-                        type="button"
-                        aria-label="Ver próximo depoimento"
-                    >
-                        Next
-                        <span class="arrow" aria-hidden="true">
-                            &rarr;
-                        </span>
-                    </button>
-
-                </div>
-
-            </div>
-        </section>
-
-
-        <!-- ==================== EVENTOS ==================== -->
-        <section class="events-section" aria-labelledby="events-title">
-
-            <div class="events-container">
-
-                <!-- Cabeçalho -->
-                <div class="events-header">
-
-                    <h2 class="events-title" id="events-title">
-                        Design events near your
-                    </h2>
-
-                    <a href="#events" class="explore-link">
-                        Explore Events
-                        <span class="arrow" aria-hidden="true">
-                            &rarr;
-                        </span>
-                    </a>
-
-                </div>
-
-                <!-- Eventos -->
-                <div class="events-grid">
-
-                    <!-- Evento 1 -->
-                    <article class="event-card">
-
-                        <div class="card-image-wrapper">
-
-                            <img
-                                src="./src/img/event-1.svg"
-                                alt="Ilustração do evento Wild Horse Event"
-                                class="card-image"
-                            >
-
-                            <span class="card-badge">
-                                Design Thinking
-                            </span>
-
-                        </div>
-
-                        <div class="card-content">
-
-                            <span class="card-category">
-                                Design Thinking
-                            </span>
-
-                            <h3 class="card-title">
-                                Wild Horse Event
-                            </h3>
-
-                            <a href="#tickets" class="buy-tickets-link">
-                                Buy Tickets
-                                <span class="arrow" aria-hidden="true">
-                                    &rarr;
-                                </span>
-                            </a>
-
-                        </div>
-                    </article>
-
-
-                    <!-- Evento 2 -->
-                    <article class="event-card">
-
-                        <div class="card-image-wrapper">
-
-                            <img
-                                src="./src/img/event-2.svg"
-                                alt="Ilustração do evento Music & Colors"
-                                class="card-image"
-                            >
-
-                            <span class="card-badge">
-                                Festival
-                            </span>
-
-                        </div>
-
-                        <div class="card-content">
-
-                            <span class="card-category">
-                                Festival
-                            </span>
-
-                            <h3 class="card-title">
-                                Music &amp; Colors
-                            </h3>
-
-                            <a href="#tickets" class="buy-tickets-link">
-                                Buy Tickets
-                                <span class="arrow" aria-hidden="true">
-                                    &rarr;
-                                </span>
-                            </a>
-
-                        </div>
-                    </article>
-
-
-                    <!-- Evento 3 -->
-                    <article class="event-card">
-
-                        <div class="card-image-wrapper">
-
-                            <img
-                                src="./src/img/event-3.svg"
-                                alt="Ilustração do evento Happy Father's Day"
-                                class="card-image"
-                            >
-
-                            <span class="card-badge">
-                                Bootcamp
-                            </span>
-
-                        </div>
-
-                        <div class="card-content">
-
-                            <span class="card-category">
-                                Bootcamp
-                            </span>
-
-                            <h3 class="card-title">
-                                Happy Father's Day
-                            </h3>
-
-                            <a href="#tickets" class="buy-tickets-link">
-                                Buy Tickets
-                                <span class="arrow" aria-hidden="true">
-                                    &rarr;
-                                </span>
-                            </a>
-
-                        </div>
-                    </article>
-
-                </div>
-            </div>
-        </section>
-
-    </main>
-
-
-    <!-- ==================== RODAPÉ ==================== -->
-    <footer class="footer">
-
-        <div class="footer-container">
-
-            <div class="footer-grid">
-
-                <!-- Logo -->
-                <div class="footer-brand">
-                    <a href="#home" class="brand-logo">
-                        weeb
-                    </a>
-                </div>
-
-
-                <!-- Produto -->
-                <div class="footer-column">
-
-                    <h4 class="column-title">
-                        PRODUCT
-                    </h4>
-
-                    <ul class="column-list">
-                        <li><a href="#pricing">Pricing</a></li>
-                        <li><a href="#overview">Overview</a></li>
-                        <li><a href="#browse">Browse</a></li>
-                        <li><a href="#accessibility">Accessibility</a></li>
-                        <li><a href="#five">Five</a></li>
-                    </ul>
-
-                </div>
-
-
-                <!-- Soluções -->
-                <div class="footer-column">
-
-                    <h4 class="column-title">
-                        SOLUTIONS
-                    </h4>
-
-                    <ul class="column-list">
-                        <li><a href="#brainstorming">Brainstorming</a></li>
-                        <li><a href="#ideation">Ideation</a></li>
-                        <li><a href="#wireframing">Wireframing</a></li>
-                        <li><a href="#research">Research</a></li>
-                    </ul>
-
-                </div>
-
-
-                <!-- Recursos -->
-                <div class="footer-column">
-
-                    <h4 class="column-title">
-                        RESOURCES
-                    </h4>
-
-                    <ul class="column-list">
-                        <li><a href="#help">Help Center</a></li>
-                        <li><a href="#blog">Blog</a></li>
-                        <li><a href="#tutorials">Tutorials</a></li>
-                    </ul>
-
-                </div>
-
-
-                <!-- Empresa -->
-                <div class="footer-column">
-
-                    <h4 class="column-title">
-                        COMPANY
-                    </h4>
-
-                    <ul class="column-list">
-                        <li><a href="#company">About</a></li>
-                        <li><a href="#press">Press</a></li>
-                        <li><a href="#events">Events</a></li>
-                        <li><a href="#careers">Careers</a></li>
-                    </ul>
-
-                </div>
-
-            </div>
-
-
-            <!-- Divisor -->
-            <hr class="footer-divider">
-
-
-            <!-- Parte inferior -->
-            <div class="footer-bottom">
-
-                <p class="copyright">
-                    &copy; 2026 Weeb, Inc. All rights reserved.
+                <p class="hero-description">
+                    Acelere a criação de interfaces incríveis com nossa
+                    plataforma completa de design. Simplifique fluxos de
+                    trabalho, colabore em tempo real e entregue projetos
+                    de alto impacto para seus clientes B2B em metade do tempo.
                 </p>
 
-                <div class="social-links">
+                <div class="hero-buttons">
 
-                    <a
-                        href="#youtube"
-                        aria-label="YouTube"
-                    >
-                        <i class="fa-brands fa-youtube"></i>
+                    <a href="#join" class="btn btn-primary">
+                        Join Now
                     </a>
 
-                    <a
-                        href="#facebook"
-                        aria-label="Facebook"
-                    >
-                        <i class="fa-brands fa-facebook-f"></i>
+                    <a href="#demo" class="btn btn-outline">
+                        View Demo
                     </a>
 
-                    <a
-                        href="#twitter"
-                        aria-label="Twitter"
-                    >
-                        <i class="fa-brands fa-twitter"></i>
-                    </a>
+                </div>
 
-                    <a
-                        href="#instagram"
-                        aria-label="Instagram"
-                    >
-                        <i class="fa-brands fa-instagram"></i>
-                    </a>
+            </div>
 
-                    <a
-                        href="#linkedin"
-                        aria-label="LinkedIn"
-                    >
-                        <i class="fa-brands fa-linkedin-in"></i>
-                    </a>
+
+            <div class="hero-image">
+
+                <img
+                    src="./src/img/hero-mockup.svg"
+                    alt="Demonstração da plataforma de design">
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         EMPRESAS
+    ====================================================== -->
+
+    <section
+        class="companies"
+        aria-labelledby="companies-title">
+
+        <div class="companies-container">
+
+            <h2
+                class="companies-title"
+                id="companies-title">
+
+                Join Leading Companies
+
+            </h2>
+
+            <div class="companies-grid">
+
+                <div class="company-item">
+
+                    <img
+                        src="./src/img/logo-smartfinder.svg"
+                        alt="SmartFinder">
+
+                    <span>SmartFinder</span>
+
+                </div>
+
+
+                <div class="company-item">
+
+                    <img
+                        src="./src/img/logo-zoomerr.svg"
+                        alt="Zoomerr">
+
+                    <span>Zoomerr</span>
+
+                </div>
+
+
+                <div class="company-item">
+
+                    <img
+                        src="./src/img/logo-shells.svg"
+                        alt="SHELLS">
+
+                    <span>SHELLS</span>
+
+                </div>
+
+
+                <div class="company-item">
+
+                    <img
+                        src="./src/img/logo-waves.svg"
+                        alt="WAVES">
+
+                    <span>WAVES</span>
+
+                </div>
+
+
+                <div class="company-item">
+
+                    <img
+                        src="./src/img/logo-artvenue.svg"
+                        alt="ArtVenue">
+
+                    <span>ArtVenue</span>
 
                 </div>
 
             </div>
 
         </div>
-    </footer>
+
+    </section>
+
+
+    <!-- =====================================================
+         DISCOVER
+    ====================================================== -->
+
+    <section
+        class="discover"
+        id="discover"
+        aria-labelledby="discover-title">
+
+        <div class="discover-container">
+
+            <div class="discover-image">
+
+                <img
+                    src="./src/img/formas-geometricas.svg"
+                    alt="Ilustração com formas geométricas">
+
+            </div>
+
+
+            <div class="discover-content">
+
+                <span class="discover-tag">
+                    DISCOVER
+                </span>
+
+                <h2
+                    class="discover-title"
+                    id="discover-title">
+
+                    <span class="purple-text">
+                        Unlimited
+                    </span>
+
+                    <span class="boxed-text">
+                        ideas
+                    </span>
+
+                    for your next great projects
+
+                </h2>
+
+                <p class="discover-description">
+                    Acelere o desenvolvimento de produtos B2B com nossa
+                    biblioteca de componentes modulares. Estruture ideias
+                    inovadoras e reduza o tempo de entrega com total flexibilidade.
+                </p>
+
+                <a
+                    href="#tools"
+                    class="discover-link">
+
+                    Discover Ideas
+
+                    <span
+                        class="arrow"
+                        aria-hidden="true">
+
+                        &rarr;
+
+                    </span>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         TOOLS
+    ====================================================== -->
+
+    <section
+        class="tools"
+        id="tools"
+        aria-labelledby="tools-title">
+
+        <div class="tools-container">
+
+            <div class="tools-image">
+
+                <img
+                    src="./src/img/hero-mockup.svg"
+                    alt="Demonstração das ferramentas da aplicação">
+
+            </div>
+
+
+            <div class="tools-content">
+
+                <span class="tools-tag">
+
+                    <span class="boxed-tag">
+                        POWERFUL
+                    </span>
+
+                </span>
+
+                <h2
+                    class="tools-title"
+                    id="tools-title">
+
+                    All the tools you can imagine
+
+                </h2>
+
+                <p class="tools-description">
+                    Acesse um ecossistema completo de recursos para criar
+                    produtos digitais incríveis. Integre componentes inteligentes
+                    e acelere seu processo criativo de ponta a ponta.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         CUSTOMERS
+    ====================================================== -->
+
+    <section
+        class="customers"
+        id="customers"
+        aria-labelledby="customers-title">
+
+        <div class="customers-container">
+
+            <div class="customers-image">
+
+                <img
+                    src="./src/img/ai-shapes.svg"
+                    alt="Formas geométricas abstratas representando inteligência artificial">
+
+            </div>
+
+
+            <div class="customers-content">
+
+                <span class="customers-tag">
+                    CUSTOMERS
+                </span>
+
+                <h2
+                    class="customers-title"
+                    id="customers-title">
+
+                    <span class="purple-text">
+                        Target
+                    </span>
+
+                    <span class="pink-box">
+                        <span class="highlight">
+                            cust
+                        </span>omers
+                    </span>
+
+                    with our powerful AI kit
+
+                </h2>
+
+                <p class="customers-description">
+                    Alcance os clientes certos utilizando nossos modelos de
+                    IA de alta precisão. Otimize campanhas, segmente públicos
+                    com inteligência e potencialize suas conversões de forma automatizada.
+                </p>
+
+                <a
+                    href="#targeting"
+                    class="customers-link">
+
+                    How Targeting Customers Works
+
+                    <span
+                        class="arrow"
+                        aria-hidden="true">
+
+                        &rarr;
+
+                    </span>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         SPEED
+    ====================================================== -->
+
+    <section
+        class="speed"
+        id="speed"
+        aria-labelledby="speed-title">
+
+        <div class="speed-container">
+
+            <div class="speed-image">
+
+                <img
+                    src="./src/img/hero-mockup.svg"
+                    alt="Demonstração da interface da plataforma">
+
+            </div>
+
+
+            <div class="speed-content">
+
+                <span class="speed-tag">
+                    SPEED
+                </span>
+
+                <h2
+                    class="speed-title"
+                    id="speed-title">
+
+                    Work fast, w/o interruptions
+
+                </h2>
+
+                <p class="speed-description">
+                    Ganhe produtividade com fluxos de trabalho contínuos e
+                    sem interrupções. Otimizamos a navegação e o desempenho
+                    para que seu time foque no que realmente importa.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         TESTIMONIALS
+    ====================================================== -->
+
+    <section
+        class="testimonials"
+        id="testimonials"
+        aria-labelledby="testimonials-title">
+
+        <div class="testimonials-container">
+
+            <div class="testimonials-header">
+
+                <h2
+                    class="testimonials-title"
+                    id="testimonials-title">
+
+                    Our partners. Our Friends.
+
+                    <span class="purple-highlight">
+                        They love us.
+                    </span>
+
+                </h2>
+
+                <p class="testimonials-subtitle">
+                    Veja o que nossos parceiros e clientes dizem sobre
+                    como transformamos suas rotinas e aceleramos seus resultados.
+                </p>
+
+            </div>
+
+
+            <div
+                class="testimonials-carousel-wrapper"
+                aria-live="polite">
+
+                <div
+                    class="testimonials-cards"
+                    id="testimonials-cards">
+
+                    <!-- Os depoimentos serão inseridos pelo JavaScript -->
+
+                </div>
+
+            </div>
+
+
+            <div class="testimonials-controls">
+
+                <button
+                    class="carousel-btn"
+                    id="prev-btn"
+                    type="button"
+                    aria-label="Ver depoimento anterior">
+
+                    <span
+                        class="arrow"
+                        aria-hidden="true">
+
+                        &larr;
+
+                    </span>
+
+                    Prev
+
+                </button>
+
+
+                <button
+                    class="carousel-btn"
+                    id="next-btn"
+                    type="button"
+                    aria-label="Ver próximo depoimento">
+
+                    Next
+
+                    <span
+                        class="arrow"
+                        aria-hidden="true">
+
+                        &rarr;
+
+                    </span>
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         EVENTOS
+    ====================================================== -->
+
+    <section
+        class="events-section"
+        id="resources"
+        aria-labelledby="events-title">
+
+        <div class="events-container">
+
+            <div class="events-header">
+
+                <h2
+                    class="events-title"
+                    id="events-title">
+
+                    Design events near your
+
+                </h2>
+
+                <a
+                    href="#events"
+                    class="explore-link">
+
+                    Explore Events
+
+                    <span
+                        class="arrow"
+                        aria-hidden="true">
+
+                        &rarr;
+
+                    </span>
+
+                </a>
+
+            </div>
+
+
+            <div
+                class="events-grid"
+                id="events">
+
+                <!-- Evento 1 -->
+
+                <article class="event-card">
+
+                    <div class="card-image-wrapper">
+
+                        <img
+                            src="./src/img/event-1.svg"
+                            alt="Ilustração do evento Wild Horse"
+                            class="card-image">
+
+                        <span class="card-badge">
+                            Design Thinking
+                        </span>
+
+                    </div>
+
+                    <div class="card-content">
+
+                        <span class="card-category">
+                            Design Thinking
+                        </span>
+
+                        <h3 class="card-title">
+                            Wild Horse Event
+                        </h3>
+
+                        <a
+                            href="#join"
+                            class="buy-tickets-link">
+
+                            Buy Tickets
+
+                            <span
+                                class="arrow"
+                                aria-hidden="true">
+
+                                &rarr;
+
+                            </span>
+
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Evento 2 -->
+
+                <article class="event-card">
+
+                    <div class="card-image-wrapper">
+
+                        <img
+                            src="./src/img/event-2.svg"
+                            alt="Ilustração do evento Music & Colors"
+                            class="card-image">
+
+                        <span class="card-badge">
+                            Festival
+                        </span>
+
+                    </div>
+
+                    <div class="card-content">
+
+                        <span class="card-category">
+                            Festival
+                        </span>
+
+                        <h3 class="card-title">
+                            Music &amp; Colors
+                        </h3>
+
+                        <a
+                            href="#join"
+                            class="buy-tickets-link">
+
+                            Buy Tickets
+
+                            <span
+                                class="arrow"
+                                aria-hidden="true">
+
+                                &rarr;
+
+                            </span>
+
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Evento 3 -->
+
+                <article class="event-card">
+
+                    <div class="card-image-wrapper">
+
+                        <img
+                            src="./src/img/event-3.svg"
+                            alt="Ilustração do evento Happy Father's Day"
+                            class="card-image">
+
+                        <span class="card-badge">
+                            Bootcamp
+                        </span>
+
+                    </div>
+
+                    <div class="card-content">
+
+                        <span class="card-category">
+                            Bootcamp
+                        </span>
+
+                        <h3 class="card-title">
+                            Happy Father’s Day
+                        </h3>
+
+                        <a
+                            href="#join"
+                            class="buy-tickets-link">
+
+                            Buy Tickets
+
+                            <span
+                                class="arrow"
+                                aria-hidden="true">
+
+                                &rarr;
+
+                            </span>
+
+                        </a>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         ÂNCORAS
+    ====================================================== -->
+
+    <div
+        class="page-anchor"
+        id="pricing"
+        aria-hidden="true">
+    </div>
+
+    <div
+        class="page-anchor"
+        id="login"
+        aria-hidden="true">
+    </div>
+
+    <div
+        class="page-anchor"
+        id="join"
+        aria-hidden="true">
+    </div>
+
+    <div
+        class="page-anchor"
+        id="demo"
+        aria-hidden="true">
+    </div>
+
+    <div
+        class="page-anchor"
+        id="targeting"
+        aria-hidden="true">
+    </div>
+
+</main>
+
+
+<!-- =====================================================
+     FOOTER
+====================================================== -->
+
+<footer class="footer">
+
+    <div class="footer-container">
+
+        <div class="footer-grid">
+
+            <!-- Logo -->
+
+            <div class="footer-brand">
+
+                <a
+                    href="#home"
+                    class="brand-logo">
+
+                    weeb
+
+                </a>
+
+            </div>
+
+
+            <!-- Product -->
+
+            <div class="footer-column">
+
+                <h4 class="column-title">
+                    PRODUCT
+                </h4>
+
+                <ul class="column-list">
+
+                    <li>
+                        <a href="#pricing">
+                            Pricing
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#home">
+                            Overview
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#discover">
+                            Browse
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#tools">
+                            Accessibility
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#customers">
+                            Five
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- Solutions -->
+
+            <div class="footer-column">
+
+                <h4 class="column-title">
+                    SOLUTIONS
+                </h4>
+
+                <ul class="column-list">
+
+                    <li>
+                        <a href="#discover">
+                            Brainstorming
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#discover">
+                            Ideation
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#tools">
+                            Wireframing
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#customers">
+                            Research
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- Resources -->
+
+            <div class="footer-column">
+
+                <h4 class="column-title">
+                    RESOURCES
+                </h4>
+
+                <ul class="column-list">
+
+                    <li>
+                        <a href="#resources">
+                            Help Center
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#resources">
+                            Blog
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#resources">
+                            Tutorials
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- Company -->
+
+            <div class="footer-column">
+
+                <h4 class="column-title">
+                    COMPANY
+                </h4>
+
+                <ul class="column-list">
+
+                    <li>
+                        <a href="#home">
+                            About
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#home">
+                            Press
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#events">
+                            Events
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#join">
+                            Careers
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+
+        <!-- Divisor -->
+
+        <hr class="footer-divider">
+
+
+        <!-- Sub-footer -->
+
+        <div class="footer-bottom">
+
+            <p class="copyright">
+                &copy; 2026 Weeb, Inc. All rights reserved.
+            </p>
+
+
+            <!-- Redes sociais -->
+
+            <div class="social-links">
+
+                <a
+                    href="#"
+                    aria-label="YouTube">
+
+                    <i
+                        class="fa-brands fa-youtube"
+                        aria-hidden="true">
+                    </i>
+
+                </a>
+
+
+                <a
+                    href="#"
+                    aria-label="Facebook">
+
+                    <i
+                        class="fa-brands fa-facebook-f"
+                        aria-hidden="true">
+                    </i>
+
+                </a>
+
+
+                <a
+                    href="#"
+                    aria-label="Twitter">
+
+                    <i
+                        class="fa-brands fa-twitter"
+                        aria-hidden="true">
+                    </i>
+
+                </a>
+
+
+                <a
+                    href="#"
+                    aria-label="Instagram">
+
+                    <i
+                        class="fa-brands fa-instagram"
+                        aria-hidden="true">
+                    </i>
+
+                </a>
+
+
+                <a
+                    href="#"
+                    aria-label="LinkedIn">
+
+                    <i
+                        class="fa-brands fa-linkedin-in"
+                        aria-hidden="true">
+                    </i>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+```
 
 </body>
 
