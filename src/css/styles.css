@@ -1,34 +1,35 @@
-/* ========================================
-   1. Base e configurações globais
-   ======================================== */
 
-@import url("./base.css");
+/* =========================================================
+   BASE E CONFIGURAÇÕES GLOBAIS
+   ========================================================= */
 
-
-/* ========================================
-   2. Estrutura principal
-   ======================================== */
-
-@import url("./header.css");
-@import url("./nav.css");
+@import url('./base.css');
 
 
-/* ========================================
-   3. Seções da página
-   ======================================== */
+/* =========================================================
+   COMPONENTES ESTRUTURAIS
+   ========================================================= */
 
-@import url("./hero.css");
-@import url("./companies.css");
-@import url("./discover.css");
-@import url("./tools.css");
-@import url("./customers.css");
-@import url("./speed.css");
-@import url("./testimonials.css");
-@import url("./events.css");
+@import url('./header.css');
+@import url('./nav.css');
 
 
-/* ========================================
-   4. Rodapé
-   ======================================== */
+/* =========================================================
+   SEÇÕES PRINCIPAIS
+   ========================================================= */
 
-@import url("./footer.css");
+@import url('./hero.css');
+@import url('./companies.css');
+@import url('./discover.css');
+@import url('./tools.css');
+@import url('./customers.css');
+@import url('./speed.css');
+@import url('./testimonials.css');
+@import url('./events.css');
+
+
+/* =========================================================
+   RODAPÉ
+   ========================================================= */
+
+@import url('./footer.css');
